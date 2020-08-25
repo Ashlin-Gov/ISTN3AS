@@ -35,19 +35,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pbxMainScreenBAckground = new System.Windows.Forms.PictureBox();
             this.logGrid = new System.Windows.Forms.DataGridView();
-            this.group6DataSet = new ISTN3AS.group6DataSet();
-            this.staffTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.staffTblTableAdapter = new ISTN3AS.group6DataSetTableAdapters.StaffTblTableAdapter();
             this.staffIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staffTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.group6DataSet = new ISTN3AS.group6DataSet();
+            this.staffTblTableAdapter = new ISTN3AS.group6DataSetTableAdapters.StaffTblTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMainScreenBAckground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffTblBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStaff
@@ -61,10 +61,10 @@
             this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStaff.Font = new System.Drawing.Font("Castellar", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnStaff.Location = new System.Drawing.Point(573, 304);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStaff.Location = new System.Drawing.Point(430, 247);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(162, 45);
+            this.btnStaff.Size = new System.Drawing.Size(122, 37);
             this.btnStaff.TabIndex = 0;
             this.btnStaff.Text = "Staff Login";
             this.btnStaff.UseVisualStyleBackColor = false;
@@ -81,10 +81,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Castellar", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(555, 242);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(416, 197);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 45);
+            this.button2.Size = new System.Drawing.Size(148, 37);
             this.button2.TabIndex = 1;
             this.button2.Text = "manager login";
             this.button2.UseVisualStyleBackColor = false;
@@ -100,10 +100,10 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Castellar", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(595, 369);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Location = new System.Drawing.Point(446, 300);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(117, 45);
+            this.btnExit.Size = new System.Drawing.Size(88, 37);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -112,9 +112,10 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Castellar", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(523, 161);
+            this.label1.Location = new System.Drawing.Point(392, 131);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 34);
+            this.label1.Size = new System.Drawing.Size(194, 64);
             this.label1.TabIndex = 3;
             this.label1.Text = "TOTAL SPORTS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,8 +126,9 @@
             this.pbxMainScreenBAckground.BackgroundImage = global::ISTN3AS.Properties.Resources.mainScreen;
             this.pbxMainScreenBAckground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxMainScreenBAckground.Location = new System.Drawing.Point(-1, -2);
+            this.pbxMainScreenBAckground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxMainScreenBAckground.Name = "pbxMainScreenBAckground";
-            this.pbxMainScreenBAckground.Size = new System.Drawing.Size(1236, 688);
+            this.pbxMainScreenBAckground.Size = new System.Drawing.Size(927, 559);
             this.pbxMainScreenBAckground.TabIndex = 4;
             this.pbxMainScreenBAckground.TabStop = false;
             // 
@@ -142,27 +144,14 @@
             this.statusDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.logGrid.DataSource = this.staffTblBindingSource;
-            this.logGrid.Location = new System.Drawing.Point(12, 12);
+            this.logGrid.Location = new System.Drawing.Point(9, 10);
+            this.logGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logGrid.Name = "logGrid";
             this.logGrid.RowHeadersWidth = 51;
             this.logGrid.RowTemplate.Height = 24;
-            this.logGrid.Size = new System.Drawing.Size(10, 150);
+            this.logGrid.Size = new System.Drawing.Size(8, 122);
             this.logGrid.TabIndex = 5;
             this.logGrid.Visible = false;
-            // 
-            // group6DataSet
-            // 
-            this.group6DataSet.DataSetName = "group6DataSet";
-            this.group6DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // staffTblBindingSource
-            // 
-            this.staffTblBindingSource.DataMember = "StaffTbl";
-            this.staffTblBindingSource.DataSource = this.group6DataSet;
-            // 
-            // staffTblTableAdapter
-            // 
-            this.staffTblTableAdapter.ClearBeforeFill = true;
             // 
             // staffIDDataGridViewTextBoxColumn
             // 
@@ -213,13 +202,27 @@
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.Width = 125;
             // 
+            // staffTblBindingSource
+            // 
+            this.staffTblBindingSource.DataMember = "StaffTbl";
+            this.staffTblBindingSource.DataSource = this.group6DataSet;
+            // 
+            // group6DataSet
+            // 
+            this.group6DataSet.DataSetName = "group6DataSet";
+            this.group6DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // staffTblTableAdapter
+            // 
+            this.staffTblTableAdapter.ClearBeforeFill = true;
+            // 
             // mainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1235, 686);
+            this.ClientSize = new System.Drawing.Size(926, 557);
             this.Controls.Add(this.logGrid);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
@@ -227,15 +230,15 @@
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.pbxMainScreenBAckground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.mainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxMainScreenBAckground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffTblBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
