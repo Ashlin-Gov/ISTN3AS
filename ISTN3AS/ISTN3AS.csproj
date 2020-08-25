@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A05EB95F-B63B-4FE2-9DB8-734AC6808713}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ISTN3AS</RootNamespace>
+    <AssemblyName>ISTN3AS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_itemComp.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="group6DataSet.cs">
+      <DependentUpon>group6DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="group6DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>group6DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managerScreen.Designer.cs">
+      <DependentUpon>managerScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printForm.Designer.cs">
+      <DependentUpon>printForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFilterDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductFilterDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salesControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesControl.Designer.cs">
+      <DependentUpon>salesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supplierDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplierDS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerScreen.resx">
+      <DependentUpon>managerScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printForm.resx">
+      <DependentUpon>printForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesControl.resx">
+      <DependentUpon>salesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="group6DataSet.xsc">
+      <DependentUpon>group6DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="group6DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>group6DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="group6DataSet.xss">
+      <DependentUpon>group6DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductDS.xsc">
+      <DependentUpon>ProductDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProductDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductDS.xss">
+      <DependentUpon>ProductDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProductFilterDS.xsc">
+      <DependentUpon>ProductFilterDS.xsd</DependentUpon>
+    </None>
+    <None Include="ProductFilterDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductFilterDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductFilterDS.xss">
+      <DependentUpon>ProductFilterDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="supplierDS.xsc">
+      <DependentUpon>supplierDS.xsd</DependentUpon>
+    </None>
+    <None Include="supplierDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supplierDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supplierDS.xss">
+      <DependentUpon>supplierDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\mainScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\userID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\passwordID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\signIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\passs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\pass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Frost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Clear Sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Cool Sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\webshop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sales %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\account %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\polo-shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\polo-shirt %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\polo-shirt %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sneaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\shirts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\shirt3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\basket %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\trash %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\trash %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\cash-on-delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\frmexit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\round-account-button-with-user-inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\password %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\files-and-folders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\password %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\supermarket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\order %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\order %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Best-Fall-Shoes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\dumbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sports-and-competition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\baseballcapsprod-18-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sports-pack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\HTB1B2_8SXXXXXXjXVXXq6xXFXXXh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\price.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9B8k_U-c_400x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-_0003s_0001_Total-Sports-ho9ver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
