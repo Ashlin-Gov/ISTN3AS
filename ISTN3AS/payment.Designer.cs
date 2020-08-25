@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlCompany = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.lblCompany = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpItemPayment = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -126,25 +126,10 @@
             this.pnlCompany.Controls.Add(this.btnExit);
             this.pnlCompany.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCompany.Location = new System.Drawing.Point(0, 0);
-            this.pnlCompany.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCompany.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCompany.Name = "pnlCompany";
             this.pnlCompany.Size = new System.Drawing.Size(531, 80);
             this.pnlCompany.TabIndex = 4;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::ISTN3AS.Properties.Resources.Frost;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.Font = new System.Drawing.Font("Castellar", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Snow;
-            this.btnExit.Location = new System.Drawing.Point(478, 10);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(44, 38);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "x";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblCompany
             // 
@@ -160,13 +145,28 @@
             this.lblCompany.Text = "TOTOAL SPORTS";
             this.lblCompany.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::ISTN3AS.Properties.Resources.Frost;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.Font = new System.Drawing.Font("Castellar", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Snow;
+            this.btnExit.Location = new System.Drawing.Point(478, 10);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(44, 38);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "x";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tpItemPayment);
             this.tabControl1.Controls.Add(this.tpReturn);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(-5, 59);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(532, 565);
@@ -177,9 +177,9 @@
             this.tpItemPayment.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tpItemPayment.Controls.Add(this.groupBox4);
             this.tpItemPayment.Location = new System.Drawing.Point(4, 22);
-            this.tpItemPayment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpItemPayment.Margin = new System.Windows.Forms.Padding(2);
             this.tpItemPayment.Name = "tpItemPayment";
-            this.tpItemPayment.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpItemPayment.Padding = new System.Windows.Forms.Padding(2);
             this.tpItemPayment.Size = new System.Drawing.Size(524, 539);
             this.tpItemPayment.TabIndex = 0;
             this.tpItemPayment.Text = "mainPay";
@@ -197,9 +197,9 @@
             this.groupBox4.Controls.Add(this.panel4);
             this.groupBox4.Font = new System.Drawing.Font("Gadugi", 12F);
             this.groupBox4.Location = new System.Drawing.Point(68, 5);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(392, 497);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
@@ -212,7 +212,7 @@
             this.btnProcessPayment_Payment.Image = global::ISTN3AS.Properties.Resources.process;
             this.btnProcessPayment_Payment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProcessPayment_Payment.Location = new System.Drawing.Point(220, 436);
-            this.btnProcessPayment_Payment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProcessPayment_Payment.Margin = new System.Windows.Forms.Padding(2);
             this.btnProcessPayment_Payment.Name = "btnProcessPayment_Payment";
             this.btnProcessPayment_Payment.Size = new System.Drawing.Size(134, 46);
             this.btnProcessPayment_Payment.TabIndex = 8;
@@ -228,7 +228,7 @@
             this.btnCancel_Payment.Image = global::ISTN3AS.Properties.Resources.cancel__1_;
             this.btnCancel_Payment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel_Payment.Location = new System.Drawing.Point(46, 436);
-            this.btnCancel_Payment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel_Payment.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel_Payment.Name = "btnCancel_Payment";
             this.btnCancel_Payment.Size = new System.Drawing.Size(134, 46);
             this.btnCancel_Payment.TabIndex = 7;
@@ -243,12 +243,13 @@
             this.button3.Image = global::ISTN3AS.Properties.Resources.bank;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(4, 244);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(382, 52);
             this.button3.TabIndex = 6;
             this.button3.Text = "Pay With Card";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // panel8
             // 
@@ -257,7 +258,7 @@
             this.panel8.Controls.Add(this.lblCustomerChange_Payment);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Location = new System.Drawing.Point(198, 171);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(190, 69);
             this.panel8.TabIndex = 5;
@@ -289,7 +290,7 @@
             this.panel7.Controls.Add(this.tbxAmtPaid_Payment);
             this.panel7.Controls.Add(this.label14);
             this.panel7.Location = new System.Drawing.Point(4, 171);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(190, 69);
             this.panel7.TabIndex = 4;
@@ -298,7 +299,7 @@
             // 
             this.tbxAmtPaid_Payment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxAmtPaid_Payment.Location = new System.Drawing.Point(26, 30);
-            this.tbxAmtPaid_Payment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxAmtPaid_Payment.Margin = new System.Windows.Forms.Padding(2);
             this.tbxAmtPaid_Payment.Name = "tbxAmtPaid_Payment";
             this.tbxAmtPaid_Payment.Size = new System.Drawing.Size(150, 29);
             this.tbxAmtPaid_Payment.TabIndex = 1;
@@ -321,7 +322,7 @@
             this.panel6.Controls.Add(this.lblTotal_Payment);
             this.panel6.Controls.Add(this.label12);
             this.panel6.Location = new System.Drawing.Point(5, 119);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(383, 45);
             this.panel6.TabIndex = 3;
@@ -351,7 +352,7 @@
             this.panel5.Controls.Add(this.lblDiscount_Payment);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Location = new System.Drawing.Point(5, 68);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(383, 47);
             this.panel5.TabIndex = 2;
@@ -381,7 +382,7 @@
             this.panel4.Controls.Add(this.lblSubTotal_Payment);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(4, 15);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(384, 49);
             this.panel4.TabIndex = 0;
@@ -410,7 +411,7 @@
             this.tpReturn.Controls.Add(this.panel24);
             this.tpReturn.Controls.Add(this.groupBox2);
             this.tpReturn.Location = new System.Drawing.Point(4, 22);
-            this.tpReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpReturn.Margin = new System.Windows.Forms.Padding(2);
             this.tpReturn.Name = "tpReturn";
             this.tpReturn.Size = new System.Drawing.Size(524, 539);
             this.tpReturn.TabIndex = 2;
@@ -427,7 +428,7 @@
             this.panel24.Controls.Add(this.label50);
             this.panel24.Controls.Add(this.label8);
             this.panel24.Location = new System.Drawing.Point(57, 89);
-            this.panel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel24.Margin = new System.Windows.Forms.Padding(2);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(404, 168);
             this.panel24.TabIndex = 15;
@@ -443,7 +444,7 @@
             // tbxReason_Return
             // 
             this.tbxReason_Return.Location = new System.Drawing.Point(107, 60);
-            this.tbxReason_Return.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxReason_Return.Margin = new System.Windows.Forms.Padding(2);
             this.tbxReason_Return.Multiline = true;
             this.tbxReason_Return.Name = "tbxReason_Return";
             this.tbxReason_Return.Size = new System.Drawing.Size(257, 93);
@@ -462,7 +463,7 @@
             // tbxCellNo_Return
             // 
             this.tbxCellNo_Return.Location = new System.Drawing.Point(107, 10);
-            this.tbxCellNo_Return.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxCellNo_Return.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCellNo_Return.MaxLength = 10;
             this.tbxCellNo_Return.Name = "tbxCellNo_Return";
             this.tbxCellNo_Return.Size = new System.Drawing.Size(257, 20);
@@ -497,9 +498,9 @@
             this.groupBox2.Controls.Add(this.panel14);
             this.groupBox2.Font = new System.Drawing.Font("Gadugi", 12F);
             this.groupBox2.Location = new System.Drawing.Point(37, 2);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(442, 497);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
@@ -525,7 +526,7 @@
             this.btnProcess_Return.Image = global::ISTN3AS.Properties.Resources.process;
             this.btnProcess_Return.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProcess_Return.Location = new System.Drawing.Point(251, 436);
-            this.btnProcess_Return.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProcess_Return.Margin = new System.Windows.Forms.Padding(2);
             this.btnProcess_Return.Name = "btnProcess_Return";
             this.btnProcess_Return.Size = new System.Drawing.Size(134, 46);
             this.btnProcess_Return.TabIndex = 8;
@@ -541,7 +542,7 @@
             this.button8.Image = global::ISTN3AS.Properties.Resources.cancel__1_;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.Location = new System.Drawing.Point(77, 436);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(134, 46);
             this.button8.TabIndex = 7;
@@ -556,7 +557,7 @@
             this.panel14.Controls.Add(this.lblTotal_Return);
             this.panel14.Controls.Add(this.label19);
             this.panel14.Location = new System.Drawing.Point(20, 259);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(404, 45);
             this.panel14.TabIndex = 3;
@@ -584,7 +585,7 @@
             // 
             this.tabPage1.Controls.Add(this.globalOrdeNoGrid);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(524, 539);
             this.tabPage1.TabIndex = 3;
@@ -605,7 +606,7 @@
             this.memIDDataGridViewTextBoxColumn});
             this.globalOrdeNoGrid.DataSource = this.orderTblBindingSource;
             this.globalOrdeNoGrid.Location = new System.Drawing.Point(35, 132);
-            this.globalOrdeNoGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.globalOrdeNoGrid.Margin = new System.Windows.Forms.Padding(2);
             this.globalOrdeNoGrid.Name = "globalOrdeNoGrid";
             this.globalOrdeNoGrid.RowHeadersWidth = 51;
             this.globalOrdeNoGrid.RowTemplate.Height = 24;
@@ -743,7 +744,7 @@
             this.Controls.Add(this.pnlCompany);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "payment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "payment";

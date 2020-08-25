@@ -48,6 +48,7 @@ namespace ISTN3AS
         {
             GlobalVariables.Clear();
             sc.Hidebuttons(this);
+            tabcontrol1.Size = new Size(1209, 578);
             tabcontrol1.SelectedTab = purchase;
         }
 
@@ -259,23 +260,38 @@ namespace ISTN3AS
 
             getAccountIDTableAdapter.Fill(group6DataSet.getAccountID,tbxStMem.Text);
             //MessageBox.Show();
-            if (chbxIsMemeber_Purchase.Checked && bool.Parse(queries1.CheckAccNum(tbxStMem.Text).ToString()))
+            if (chbxIsMemeber_Purchase.Checked)
             {
-                try
-                {
-                    if (getAccountIDDataGridView.Rows.Count > 0)
+                if (!tbxStMem.Text.Equals("")) {
+                    if (bool.Parse(queries1.CheckAccNum(tbxStMem.Text).ToString()))
                     {
-                        GlobalVariables.MemberID = int.Parse(getAccountIDDataGridView.Rows[0].Cells[0].Value.ToString());
-                        GlobalVariables.isMemeber = true;
-                        GlobalVariables.AccDiscount = 0.05;
+                        try
+                        {
+                            if (getAccountIDDataGridView.Rows.Count > 0)
+                            {
+                                GlobalVariables.MemberID = int.Parse(getAccountIDDataGridView.Rows[0].Cells[0].Value.ToString());
+                                GlobalVariables.isMemeber = true;
+                                GlobalVariables.AccDiscount = 0.05;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Please Enter a Valid Account Number");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please Enter a Valid Account Number");
+                        checkError = false;
                     }
                 }
-                catch(Exception ex)
+                else
                 {
                     MessageBox.Show("Please Enter a Valid Account Number");
+                    checkError = false;
                 }
-                
             }
+            
             if (checkError)
             {
                 sc.Purchase(this);

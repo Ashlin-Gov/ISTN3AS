@@ -62,11 +62,11 @@
             this.btnStaff.Font = new System.Drawing.Font("Castellar", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnStaff.Location = new System.Drawing.Point(430, 247);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(2);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(122, 37);
+            this.btnStaff.Size = new System.Drawing.Size(122, 49);
             this.btnStaff.TabIndex = 0;
-            this.btnStaff.Text = "Staff Login";
+            this.btnStaff.Text = "Process Purchase";
             this.btnStaff.UseVisualStyleBackColor = false;
             this.btnStaff.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -82,7 +82,7 @@
             this.button2.Font = new System.Drawing.Font("Castellar", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.button2.Location = new System.Drawing.Point(416, 197);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 37);
             this.button2.TabIndex = 1;
@@ -100,8 +100,8 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Castellar", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(446, 300);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Location = new System.Drawing.Point(445, 312);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(88, 37);
             this.btnExit.TabIndex = 2;
@@ -126,7 +126,7 @@
             this.pbxMainScreenBAckground.BackgroundImage = global::ISTN3AS.Properties.Resources.mainScreen;
             this.pbxMainScreenBAckground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbxMainScreenBAckground.Location = new System.Drawing.Point(-1, -2);
-            this.pbxMainScreenBAckground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbxMainScreenBAckground.Margin = new System.Windows.Forms.Padding(2);
             this.pbxMainScreenBAckground.Name = "pbxMainScreenBAckground";
             this.pbxMainScreenBAckground.Size = new System.Drawing.Size(927, 559);
             this.pbxMainScreenBAckground.TabIndex = 4;
@@ -145,7 +145,7 @@
             this.emailDataGridViewTextBoxColumn});
             this.logGrid.DataSource = this.staffTblBindingSource;
             this.logGrid.Location = new System.Drawing.Point(9, 10);
-            this.logGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logGrid.Margin = new System.Windows.Forms.Padding(2);
             this.logGrid.Name = "logGrid";
             this.logGrid.RowHeadersWidth = 51;
             this.logGrid.RowTemplate.Height = 24;
@@ -230,7 +230,7 @@
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.pbxMainScreenBAckground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

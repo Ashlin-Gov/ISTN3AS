@@ -88,7 +88,7 @@ namespace ISTN3AS
                 this.orderTblTableAdapter.Fill(this.productDS.OrderTbl);
                 //Non Member
                 GlobalVariables.orderNo = int.Parse(globalOrdeNoGrid.Rows[globalOrdeNoGrid.Rows.Count - 2].Cells[0].Value.ToString());
-                sc.tabcontrol1.SelectedIndex = 1;
+                sc.tabcontrol1.SelectedTab = sc.purchase;
                 sc.tabcontrol1.Size = new Size(1267, 582);
                 sc.resetBeginPurchase();
                 printForm pf = new printForm();
@@ -234,6 +234,11 @@ namespace ISTN3AS
 
             pf.Show();
             this.Dispose();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
