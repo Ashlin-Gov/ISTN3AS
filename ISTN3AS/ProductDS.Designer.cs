@@ -7814,7 +7814,7 @@ WHERE        (ProdID = @ID);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SeachPhoneOrder(ProductDS.PhoneOrderDataTable dataTable, string name) {
+        public virtual int searchPhoneOrder(ProductDS.PhoneOrderDataTable dataTable, string name) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((name == null)) {
                 throw new global::System.ArgumentNullException("name");

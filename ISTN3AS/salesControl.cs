@@ -30,7 +30,7 @@ namespace ISTN3AS
             sc.Intialise(this);
             sc.Hidebuttons(this);
             tabcontrol1.SelectedTab = purchase;
-            tabcontrol1.Size = new Size(1285, 582);
+            tabcontrol1.Size = new Size(1209, 578);
 
 
         }
@@ -48,7 +48,7 @@ namespace ISTN3AS
         {
             GlobalVariables.Clear();
             sc.Hidebuttons(this);
-            tabcontrol1.SelectedTab = purchase;  
+            tabcontrol1.SelectedTab = purchase;
         }
 
         private void btnCat1_Click(object sender, EventArgs e)
@@ -81,34 +81,34 @@ namespace ISTN3AS
         private void btnAdd2_Click(object sender, EventArgs e)
         {
             sc.Hidebuttons(this);
-
-            this.phoneOrderLineTblTableAdapter.Fill(this.productDS.PhoneOrderLineTbl);
-            this.phoneOrderTableAdapter.Fill(this.productDS.PhoneOrder);
+            initTbl();
 
             tabcontrol1.SelectedTab = orders;
             //tabcontrol1.Size = new Size(1280, 566);
 
-            tabcontrol1.Size = new Size(1267, 582);
+            tabcontrol1.Size = new Size(1209, 578);
 
         }
 
         private void btnReturns_Click(object sender, EventArgs e)
         {
             lsvReturnItems_Returns.Items.Clear();
+            initTbl();
             GlobalVariables.Clear();
             this.orderLineTblTableAdapter.Fill(this.productDS.OrderLineTbl);
             this.orderTblTableAdapter.Fill(this.productDS.OrderTbl);
             sc.Hidebuttons(this);
             tabcontrol1.SelectedTab = returnItem;
-            tabcontrol1.Size = new Size(1267, 582);
+            tabcontrol1.Size = new Size(1209, 578);
 
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
             sc.Hidebuttons(this);
+            initTbl();
             tabcontrol1.SelectedTab = accCreate;
-            tabcontrol1.Size = new Size(1267, 582);
+            tabcontrol1.Size = new Size(1209, 578);
 
         }
 
@@ -156,6 +156,7 @@ namespace ISTN3AS
                 }
 
                 int maxID = int.Parse(phoneOrderTableAdapter.getMaxID().ToString());
+
                 //MessageBox.Show(maxID.ToString()) ;
                 for (int i = 0; i < GlobalVariables.productCart_ProductID.Count(); i++)
                 {
@@ -257,6 +258,7 @@ namespace ISTN3AS
             
 
             getAccountIDTableAdapter.Fill(group6DataSet.getAccountID,tbxStMem.Text);
+            //MessageBox.Show();
             if (chbxIsMemeber_Purchase.Checked && bool.Parse(queries1.CheckAccNum(tbxStMem.Text).ToString()))
             {
                 try
@@ -282,8 +284,6 @@ namespace ISTN3AS
                 this.categoryFIlterTA.AllProducts(this.productDS.CategoryFIlter);
                 filterOn = true;
                 tabcontrol1.Size = new Size(230, 559);
-                btnCashOut.Enabled = false;
-
                 cbxCategory_Purchase.SelectedIndex = -1;
                 filterCategory = true;
             }
@@ -291,6 +291,16 @@ namespace ISTN3AS
 
         private void btnMenuOrder_Click(object sender, EventArgs e)
         {
+        }
+
+        public void initTbl()
+        {
+            this.sizesTableAdapter.Fill(this.productFilterDS.Sizes);
+            this.coloursTableAdapter.Fill(this.productFilterDS.Colours);
+            this.brandsTableAdapter.Fill(this.productFilterDS.Brands);
+            this.orderLineTblTableAdapter.Fill(this.productDS.OrderLineTbl);
+            this.orderTblTableAdapter.Fill(this.productDS.OrderTbl);
+            this.orderTblTableAdapter.Fill(this.productDS.OrderTbl);
         }
 
         private void salesControl_Load(object sender, EventArgs e)
@@ -611,7 +621,6 @@ namespace ISTN3AS
                 MessageBox.Show("Please Select a Product to Remove");
             }
             
-            //MessageBox.Show(GlobalVariables.productCart.Count().ToString());
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -638,6 +647,7 @@ namespace ISTN3AS
 
         private void button14_Click(object sender, EventArgs e)
         {
+            
             GlobalVariables.cartTotal = Double.Parse(phoneOrderDataGridView.CurrentRow.Cells[1].Value.ToString());
             GlobalVariables.customerName_Order = phoneOrderDataGridView.CurrentRow.Cells[2].Value.ToString();
             GlobalVariables.customerCellNo_Order = phoneOrderDataGridView.CurrentRow.Cells[3].Value.ToString();
@@ -646,15 +656,12 @@ namespace ISTN3AS
             {
                 GlobalVariables.MemberID = int.Parse(phoneOrderDataGridView.CurrentRow.Cells[5].Value.ToString());
             }
-            //MessageBox.Show(GlobalVariables.productCart_ProductID.Count.ToString());
             for (int i = 0; i < getPhoneOrderProductsDataGridView.Rows.Count - 1; i++)
             {
-                //MessageBox.Show(i.ToString());
                 GlobalVariables.productCart_ProductID.Add(getPhoneOrderProductsDataGridView.Rows[i].Cells[1].Value.ToString());
                 GlobalVariables.productCart_UnitPrice.Add(Double.Parse(getPhoneOrderProductsDataGridView.Rows[i].Cells[2].Value.ToString()));
                 GlobalVariables.productCart_Quantity.Add(int.Parse(getPhoneOrderProductsDataGridView.Rows[i].Cells[3].Value.ToString()));
             }
-            // MessageBox.Show(GlobalVariables.productCart_ProductID.Count.ToString());
             GlobalVariables.TransactionType = "Phone";
             Form payment = new payment(this);
             payment.ShowDialog();
@@ -737,7 +744,6 @@ namespace ISTN3AS
         private void button19_Click(object sender, EventArgs e)
         {
             GlobalVariables.TransactionType = "Return";
-            
             if(lsvReturnItems_Returns.Items.Count > 0)
             {
                 Form payment = new payment(this);
@@ -800,7 +806,8 @@ namespace ISTN3AS
             chbxStoreOrder_Purchase.CheckState = CheckState.Checked;
             pnlContactDetails_Purchase.Enabled = false;
             chbxIsMemeber_Purchase.CheckState = CheckState.Unchecked;
-
+            lsvProductCart_Control.Clear();
+            lblTotal.Text = "";
             tbxStMem.Clear();
             tbxCustomerOrdCell_BeginPurchase.Clear();
             tbxCustomerOrdName_BeginPurchase.Clear();
@@ -822,19 +829,17 @@ namespace ISTN3AS
             tbxAddress_AccCreation.Clear();
         }
 
-        private void button12_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void tbxSearch_PhoneOrder_TextChanged(object sender, EventArgs e)
-        {
-            phoneOrderTableAdapter.SeachPhoneOrder(productDS.PhoneOrder, tbxSearch_PhoneOrder.Text);
-        }
-
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            LoginScreen lg = new LoginScreen();
+            lg.ShowDialog();
+            this.Dispose();
+        }
 
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            phoneOrderTableAdapter.searchPhoneOrder(productDS.PhoneOrder, tbxSearch_PhoneOrder.Text);
         }
     }
 }

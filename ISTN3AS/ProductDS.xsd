@@ -481,7 +481,7 @@ FROM            PhoneOrder</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="DBConnection (Settings)" DbObjectName="group6.dbo.PhoneOrder" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="SeachPhoneOrder" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="SeachPhoneOrder" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="SeachPhoneOrder">
+              <DbSource ConnectionRef="DBConnection (Settings)" DbObjectName="group6.dbo.PhoneOrder" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="searchPhoneOrder" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="searchPhoneOrder" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="searchPhoneOrder">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        PhoneOrderID, Total, FullName, CellNum, StaffID, MemID

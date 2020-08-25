@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.purchase = new System.Windows.Forms.TabPage();
+            this.btnMenuPurchase = new System.Windows.Forms.Button();
             this.chbxPhoneOrder_Purchase = new System.Windows.Forms.CheckBox();
             this.chbxStoreOrder_Purchase = new System.Windows.Forms.CheckBox();
             this.pnlContactDetails_Purchase = new System.Windows.Forms.Panel();
@@ -38,7 +39,6 @@
             this.lblOrdCell = new System.Windows.Forms.Label();
             this.lblOrdName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnMenuPurchase = new System.Windows.Forms.Button();
             this.pnlMember_Purchase = new System.Windows.Forms.Panel();
             this.chbxIsMemeber_Purchase = new System.Windows.Forms.CheckBox();
             this.tbxStMem = new System.Windows.Forms.TextBox();
@@ -50,6 +50,10 @@
             this.cat4 = new System.Windows.Forms.TabPage();
             this.lblCategory = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cbxCategory_Purchase = new System.Windows.Forms.ComboBox();
             this.categoryTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,6 +67,17 @@
             this.btnShoePurchase = new System.Windows.Forms.Button();
             this.tabcontrol1 = new System.Windows.Forms.TabControl();
             this.accCreate = new System.Windows.Forms.TabPage();
+            this.memberTblDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.memberTblBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.group6DataSet = new ISTN3AS.group6DataSet();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.tbxAccountNo_AccCreation = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -110,7 +125,6 @@
             this.getAccountIDDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.getAccountIDBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.group6DataSet = new ISTN3AS.group6DataSet();
             this.sizesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,7 +185,6 @@
             this.brandsTableAdapter = new ISTN3AS.ProductFilterDSTableAdapters.BrandsTableAdapter();
             this.coloursTableAdapter = new ISTN3AS.ProductFilterDSTableAdapters.ColoursTableAdapter();
             this.sizesTableAdapter = new ISTN3AS.ProductFilterDSTableAdapters.SizesTableAdapter();
-            this.memberTblBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager3 = new ISTN3AS.group6DataSetTableAdapters.TableAdapterManager();
             this.memberTblTableAdapter = new ISTN3AS.group6DataSetTableAdapters.MemberTblTableAdapter();
             this.queries1 = new ISTN3AS.group6DataSetTableAdapters.Queries();
@@ -179,19 +192,6 @@
             this.getLoginDetailsTableAdapter = new ISTN3AS.group6DataSetTableAdapters.GetLoginDetailsTableAdapter();
             this.getAccountIDTableAdapter = new ISTN3AS.group6DataSetTableAdapters.getAccountIDTableAdapter();
             this.queries2 = new ISTN3AS.group6DataSetTableAdapters.Queries();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.memberTblDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -251,6 +251,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Quantity_Control)).BeginInit();
             this.tabcontrol1.SuspendLayout();
             this.accCreate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.memberTblDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memberTblBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).BeginInit();
             this.groupBox12.SuspendLayout();
             this.panel25.SuspendLayout();
             this.orders.SuspendLayout();
@@ -266,7 +269,6 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.getAccountIDDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getAccountIDBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coloursDataGridView)).BeginInit();
@@ -289,9 +291,7 @@
             this.grpBoxDBgrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoryFIlterDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberTblBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getLoginDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberTblDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getPhoneOrderProductsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneOrderBindingSource)).BeginInit();
@@ -306,19 +306,40 @@
             // purchase
             // 
             this.purchase.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.purchase.Controls.Add(this.btnMenuPurchase);
             this.purchase.Controls.Add(this.chbxPhoneOrder_Purchase);
             this.purchase.Controls.Add(this.chbxStoreOrder_Purchase);
             this.purchase.Controls.Add(this.pnlContactDetails_Purchase);
             this.purchase.Controls.Add(this.label9);
-            this.purchase.Controls.Add(this.btnMenuPurchase);
             this.purchase.Controls.Add(this.pnlMember_Purchase);
             this.purchase.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.purchase.Location = new System.Drawing.Point(4, 22);
-            this.purchase.Margin = new System.Windows.Forms.Padding(2);
+            this.purchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.purchase.Name = "purchase";
-            this.purchase.Size = new System.Drawing.Size(1260, 556);
+            this.purchase.Size = new System.Drawing.Size(916, 552);
             this.purchase.TabIndex = 5;
             this.purchase.Text = "purchase";
+            // 
+            // btnMenuPurchase
+            // 
+            this.btnMenuPurchase.BackColor = System.Drawing.SystemColors.Window;
+            this.btnMenuPurchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuPurchase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMenuPurchase.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnMenuPurchase.FlatAppearance.BorderSize = 2;
+            this.btnMenuPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuPurchase.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuPurchase.ForeColor = System.Drawing.Color.Black;
+            this.btnMenuPurchase.Image = global::ISTN3AS.Properties.Resources.basket__1_;
+            this.btnMenuPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuPurchase.Location = new System.Drawing.Point(127, 380);
+            this.btnMenuPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuPurchase.Name = "btnMenuPurchase";
+            this.btnMenuPurchase.Size = new System.Drawing.Size(225, 63);
+            this.btnMenuPurchase.TabIndex = 7;
+            this.btnMenuPurchase.Text = "Begin Purchase";
+            this.btnMenuPurchase.UseVisualStyleBackColor = false;
+            this.btnMenuPurchase.Click += new System.EventHandler(this.btnMenuPurchase_Click);
             // 
             // chbxPhoneOrder_Purchase
             // 
@@ -351,7 +372,7 @@
             this.pnlContactDetails_Purchase.Controls.Add(this.lblOrdCell);
             this.pnlContactDetails_Purchase.Controls.Add(this.lblOrdName);
             this.pnlContactDetails_Purchase.Location = new System.Drawing.Point(64, 266);
-            this.pnlContactDetails_Purchase.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlContactDetails_Purchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlContactDetails_Purchase.Name = "pnlContactDetails_Purchase";
             this.pnlContactDetails_Purchase.Size = new System.Drawing.Size(354, 99);
             this.pnlContactDetails_Purchase.TabIndex = 10;
@@ -360,7 +381,7 @@
             // 
             this.tbxCustomerOrdCell_BeginPurchase.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbxCustomerOrdCell_BeginPurchase.Location = new System.Drawing.Point(75, 46);
-            this.tbxCustomerOrdCell_BeginPurchase.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxCustomerOrdCell_BeginPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxCustomerOrdCell_BeginPurchase.Name = "tbxCustomerOrdCell_BeginPurchase";
             this.tbxCustomerOrdCell_BeginPurchase.Size = new System.Drawing.Size(275, 29);
             this.tbxCustomerOrdCell_BeginPurchase.TabIndex = 19;
@@ -369,7 +390,7 @@
             // 
             this.tbxCustomerOrdName_BeginPurchase.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbxCustomerOrdName_BeginPurchase.Location = new System.Drawing.Point(75, 13);
-            this.tbxCustomerOrdName_BeginPurchase.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxCustomerOrdName_BeginPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxCustomerOrdName_BeginPurchase.Name = "tbxCustomerOrdName_BeginPurchase";
             this.tbxCustomerOrdName_BeginPurchase.Size = new System.Drawing.Size(275, 29);
             this.tbxCustomerOrdName_BeginPurchase.TabIndex = 18;
@@ -411,27 +432,6 @@
             this.label9.Text = "Process Order";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnMenuPurchase
-            // 
-            this.btnMenuPurchase.BackColor = System.Drawing.SystemColors.Window;
-            this.btnMenuPurchase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenuPurchase.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenuPurchase.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnMenuPurchase.FlatAppearance.BorderSize = 2;
-            this.btnMenuPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuPurchase.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPurchase.ForeColor = System.Drawing.Color.Black;
-            this.btnMenuPurchase.Image = global::ISTN3AS.Properties.Resources.basket__1_;
-            this.btnMenuPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuPurchase.Location = new System.Drawing.Point(136, 455);
-            this.btnMenuPurchase.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuPurchase.Name = "btnMenuPurchase";
-            this.btnMenuPurchase.Size = new System.Drawing.Size(225, 63);
-            this.btnMenuPurchase.TabIndex = 7;
-            this.btnMenuPurchase.Text = "Begin Purchase";
-            this.btnMenuPurchase.UseVisualStyleBackColor = false;
-            this.btnMenuPurchase.Click += new System.EventHandler(this.btnMenuPurchase_Click);
-            // 
             // pnlMember_Purchase
             // 
             this.pnlMember_Purchase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -439,7 +439,7 @@
             this.pnlMember_Purchase.Controls.Add(this.tbxStMem);
             this.pnlMember_Purchase.Controls.Add(this.lblStMem);
             this.pnlMember_Purchase.Location = new System.Drawing.Point(63, 146);
-            this.pnlMember_Purchase.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMember_Purchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMember_Purchase.Name = "pnlMember_Purchase";
             this.pnlMember_Purchase.Size = new System.Drawing.Size(355, 107);
             this.pnlMember_Purchase.TabIndex = 7;
@@ -458,7 +458,7 @@
             // tbxStMem
             // 
             this.tbxStMem.Location = new System.Drawing.Point(97, 65);
-            this.tbxStMem.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxStMem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxStMem.Name = "tbxStMem";
             this.tbxStMem.Size = new System.Drawing.Size(250, 29);
             this.tbxStMem.TabIndex = 1;
@@ -500,9 +500,9 @@
             this.cat4.Controls.Add(this.lblCategory);
             this.cat4.Controls.Add(this.groupBox16);
             this.cat4.Location = new System.Drawing.Point(4, 22);
-            this.cat4.Margin = new System.Windows.Forms.Padding(2);
+            this.cat4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cat4.Name = "cat4";
-            this.cat4.Size = new System.Drawing.Size(1260, 556);
+            this.cat4.Size = new System.Drawing.Size(916, 552);
             this.cat4.TabIndex = 3;
             this.cat4.Text = "cat4";
             // 
@@ -533,12 +533,52 @@
             this.groupBox16.Controls.Add(this.label73);
             this.groupBox16.Controls.Add(this.label75);
             this.groupBox16.Location = new System.Drawing.Point(7, 53);
-            this.groupBox16.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox16.Size = new System.Drawing.Size(210, 469);
             this.groupBox16.TabIndex = 3;
             this.groupBox16.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(183, 310);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(14, 21);
+            this.button7.TabIndex = 16;
+            this.button7.Text = "X";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(188, 131);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(14, 21);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "X";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(188, 74);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(14, 21);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "X";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(188, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(14, 21);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -634,7 +674,7 @@
             // Quantity_Control
             // 
             this.Quantity_Control.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantity_Control.Location = new System.Drawing.Point(430, 483);
+            this.Quantity_Control.Location = new System.Drawing.Point(385, 483);
             this.Quantity_Control.Name = "Quantity_Control";
             this.Quantity_Control.Size = new System.Drawing.Size(57, 26);
             this.Quantity_Control.TabIndex = 13;
@@ -652,8 +692,8 @@
             this.btnShoePurchase.ForeColor = System.Drawing.Color.Black;
             this.btnShoePurchase.Image = global::ISTN3AS.Properties.Resources.basket__1_;
             this.btnShoePurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoePurchase.Location = new System.Drawing.Point(487, 468);
-            this.btnShoePurchase.Margin = new System.Windows.Forms.Padding(2);
+            this.btnShoePurchase.Location = new System.Drawing.Point(467, 468);
+            this.btnShoePurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShoePurchase.Name = "btnShoePurchase";
             this.btnShoePurchase.Size = new System.Drawing.Size(192, 54);
             this.btnShoePurchase.TabIndex = 6;
@@ -669,11 +709,11 @@
             this.tabcontrol1.Controls.Add(this.orders);
             this.tabcontrol1.Controls.Add(this.returnItem);
             this.tabcontrol1.Controls.Add(this.tabPage1);
-            this.tabcontrol1.Location = new System.Drawing.Point(243, 119);
-            this.tabcontrol1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabcontrol1.Location = new System.Drawing.Point(245, 123);
+            this.tabcontrol1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabcontrol1.Name = "tabcontrol1";
             this.tabcontrol1.SelectedIndex = 0;
-            this.tabcontrol1.Size = new System.Drawing.Size(1268, 582);
+            this.tabcontrol1.Size = new System.Drawing.Size(924, 578);
             this.tabcontrol1.TabIndex = 5;
             // 
             // accCreate
@@ -684,11 +724,107 @@
             this.accCreate.Controls.Add(this.groupBox12);
             this.accCreate.Font = new System.Drawing.Font("Gadugi", 12F);
             this.accCreate.Location = new System.Drawing.Point(4, 22);
-            this.accCreate.Margin = new System.Windows.Forms.Padding(2);
+            this.accCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.accCreate.Name = "accCreate";
-            this.accCreate.Size = new System.Drawing.Size(1260, 556);
+            this.accCreate.Size = new System.Drawing.Size(916, 552);
             this.accCreate.TabIndex = 7;
             this.accCreate.Text = "AccCreate";
+            // 
+            // memberTblDataGridView
+            // 
+            this.memberTblDataGridView.AutoGenerateColumns = false;
+            this.memberTblDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.memberTblDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn47});
+            this.memberTblDataGridView.DataSource = this.memberTblBindingSource1;
+            this.memberTblDataGridView.Location = new System.Drawing.Point(520, 22);
+            this.memberTblDataGridView.Name = "memberTblDataGridView";
+            this.memberTblDataGridView.ReadOnly = true;
+            this.memberTblDataGridView.RowHeadersWidth = 51;
+            this.memberTblDataGridView.Size = new System.Drawing.Size(659, 468);
+            this.memberTblDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "MemID";
+            this.dataGridViewTextBoxColumn10.HeaderText = "MemID";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Surname";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "CellNum";
+            this.dataGridViewTextBoxColumn13.HeaderText = "CellNum";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn16.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn47
+            // 
+            this.dataGridViewTextBoxColumn47.DataPropertyName = "AccNumber";
+            this.dataGridViewTextBoxColumn47.HeaderText = "AccNumber";
+            this.dataGridViewTextBoxColumn47.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
+            this.dataGridViewTextBoxColumn47.Width = 125;
+            // 
+            // memberTblBindingSource1
+            // 
+            this.memberTblBindingSource1.DataMember = "MemberTbl";
+            this.memberTblBindingSource1.DataSource = this.group6DataSet;
+            // 
+            // group6DataSet
+            // 
+            this.group6DataSet.DataSetName = "group6DataSet";
+            this.group6DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox12
             // 
@@ -698,10 +834,10 @@
             this.groupBox12.Controls.Add(this.label56);
             this.groupBox12.Controls.Add(this.button21);
             this.groupBox12.Controls.Add(this.panel25);
-            this.groupBox12.Location = new System.Drawing.Point(24, 40);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Location = new System.Drawing.Point(32, 22);
+            this.groupBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox12.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox12.Size = new System.Drawing.Size(470, 476);
             this.groupBox12.TabIndex = 0;
             this.groupBox12.TabStop = false;
@@ -710,7 +846,7 @@
             // 
             this.tbxAccountNo_AccCreation.Enabled = false;
             this.tbxAccountNo_AccCreation.Location = new System.Drawing.Point(195, 374);
-            this.tbxAccountNo_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxAccountNo_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxAccountNo_AccCreation.Name = "tbxAccountNo_AccCreation";
             this.tbxAccountNo_AccCreation.Size = new System.Drawing.Size(211, 29);
             this.tbxAccountNo_AccCreation.TabIndex = 1;
@@ -735,7 +871,7 @@
             this.button20.Image = global::ISTN3AS.Properties.Resources.cancel__1_;
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button20.Location = new System.Drawing.Point(4, 418);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
+            this.button20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(141, 46);
             this.button20.TabIndex = 17;
@@ -763,7 +899,7 @@
             this.button21.Image = global::ISTN3AS.Properties.Resources.process;
             this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button21.Location = new System.Drawing.Point(320, 418);
-            this.button21.Margin = new System.Windows.Forms.Padding(2);
+            this.button21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(141, 46);
             this.button21.TabIndex = 18;
@@ -788,7 +924,7 @@
             this.panel25.Controls.Add(this.label54);
             this.panel25.Controls.Add(this.label55);
             this.panel25.Location = new System.Drawing.Point(4, 75);
-            this.panel25.Margin = new System.Windows.Forms.Padding(2);
+            this.panel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(457, 295);
             this.panel25.TabIndex = 15;
@@ -806,7 +942,7 @@
             // tbxID_AccCreation
             // 
             this.tbxID_AccCreation.Location = new System.Drawing.Point(87, 248);
-            this.tbxID_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxID_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxID_AccCreation.Name = "tbxID_AccCreation";
             this.tbxID_AccCreation.Size = new System.Drawing.Size(345, 29);
             this.tbxID_AccCreation.TabIndex = 21;
@@ -814,7 +950,7 @@
             // tbxCell_AccCreation
             // 
             this.tbxCell_AccCreation.Location = new System.Drawing.Point(86, 106);
-            this.tbxCell_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxCell_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxCell_AccCreation.Name = "tbxCell_AccCreation";
             this.tbxCell_AccCreation.Size = new System.Drawing.Size(345, 29);
             this.tbxCell_AccCreation.TabIndex = 16;
@@ -822,7 +958,7 @@
             // tbxAddress_AccCreation
             // 
             this.tbxAddress_AccCreation.Location = new System.Drawing.Point(86, 153);
-            this.tbxAddress_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxAddress_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxAddress_AccCreation.Name = "tbxAddress_AccCreation";
             this.tbxAddress_AccCreation.Size = new System.Drawing.Size(345, 29);
             this.tbxAddress_AccCreation.TabIndex = 18;
@@ -830,7 +966,7 @@
             // tbxEmail_AccCreation
             // 
             this.tbxEmail_AccCreation.Location = new System.Drawing.Point(86, 202);
-            this.tbxEmail_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxEmail_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxEmail_AccCreation.Name = "tbxEmail_AccCreation";
             this.tbxEmail_AccCreation.Size = new System.Drawing.Size(345, 29);
             this.tbxEmail_AccCreation.TabIndex = 19;
@@ -858,7 +994,7 @@
             // tbxSurname_AccCreation
             // 
             this.tbxSurname_AccCreation.Location = new System.Drawing.Point(86, 58);
-            this.tbxSurname_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxSurname_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxSurname_AccCreation.Name = "tbxSurname_AccCreation";
             this.tbxSurname_AccCreation.Size = new System.Drawing.Size(345, 29);
             this.tbxSurname_AccCreation.TabIndex = 15;
@@ -866,7 +1002,7 @@
             // tbxName_AccCreation
             // 
             this.tbxName_AccCreation.Location = new System.Drawing.Point(86, 10);
-            this.tbxName_AccCreation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxName_AccCreation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxName_AccCreation.Name = "tbxName_AccCreation";
             this.tbxName_AccCreation.Size = new System.Drawing.Size(346, 29);
             this.tbxName_AccCreation.TabIndex = 14;
@@ -908,9 +1044,9 @@
             this.orders.Controls.Add(this.groupBox6);
             this.orders.Font = new System.Drawing.Font("Gadugi", 12F);
             this.orders.Location = new System.Drawing.Point(4, 22);
-            this.orders.Margin = new System.Windows.Forms.Padding(2);
+            this.orders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.orders.Name = "orders";
-            this.orders.Size = new System.Drawing.Size(1260, 556);
+            this.orders.Size = new System.Drawing.Size(916, 552);
             this.orders.TabIndex = 8;
             this.orders.Text = "orders";
             // 
@@ -923,9 +1059,9 @@
             this.groupBox6.Controls.Add(this.button13);
             this.groupBox6.Controls.Add(this.label6);
             this.groupBox6.Location = new System.Drawing.Point(209, 9);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Size = new System.Drawing.Size(831, 511);
             this.groupBox6.TabIndex = 2;
             this.groupBox6.TabStop = false;
@@ -973,7 +1109,7 @@
             this.panel16.Controls.Add(this.label27);
             this.panel16.Controls.Add(this.tbxSearch_PhoneOrder);
             this.panel16.Location = new System.Drawing.Point(169, 56);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(523, 32);
             this.panel16.TabIndex = 13;
@@ -991,12 +1127,12 @@
             // tbxSearch_PhoneOrder
             // 
             this.tbxSearch_PhoneOrder.Location = new System.Drawing.Point(193, 2);
-            this.tbxSearch_PhoneOrder.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxSearch_PhoneOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxSearch_PhoneOrder.Multiline = true;
             this.tbxSearch_PhoneOrder.Name = "tbxSearch_PhoneOrder";
             this.tbxSearch_PhoneOrder.Size = new System.Drawing.Size(326, 26);
             this.tbxSearch_PhoneOrder.TabIndex = 11;
-            this.tbxSearch_PhoneOrder.TextChanged += new System.EventHandler(this.tbxSearch_PhoneOrder_TextChanged);
+            this.tbxSearch_PhoneOrder.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // button14
             // 
@@ -1007,7 +1143,7 @@
             this.button14.Image = global::ISTN3AS.Properties.Resources.supermarket;
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.Location = new System.Drawing.Point(36, 329);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
+            this.button14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(166, 32);
             this.button14.TabIndex = 10;
@@ -1024,7 +1160,7 @@
             this.button13.Image = global::ISTN3AS.Properties.Resources.quit;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.Location = new System.Drawing.Point(36, 270);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
+            this.button13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(166, 32);
             this.button13.TabIndex = 10;
@@ -1052,9 +1188,9 @@
             this.returnItem.Controls.Add(this.groupBox9);
             this.returnItem.Font = new System.Drawing.Font("Gadugi", 12F);
             this.returnItem.Location = new System.Drawing.Point(4, 22);
-            this.returnItem.Margin = new System.Windows.Forms.Padding(2);
+            this.returnItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.returnItem.Name = "returnItem";
-            this.returnItem.Size = new System.Drawing.Size(1260, 556);
+            this.returnItem.Size = new System.Drawing.Size(916, 552);
             this.returnItem.TabIndex = 9;
             this.returnItem.Text = "return";
             // 
@@ -1064,18 +1200,18 @@
             this.groupBox11.Controls.Add(this.button19);
             this.groupBox11.Controls.Add(this.label51);
             this.groupBox11.Controls.Add(this.label52);
-            this.groupBox11.Location = new System.Drawing.Point(863, 2);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox11.Location = new System.Drawing.Point(855, 18);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox11.Size = new System.Drawing.Size(390, 520);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox11.Size = new System.Drawing.Size(340, 520);
             this.groupBox11.TabIndex = 1;
             this.groupBox11.TabStop = false;
             // 
             // lsvReturnItems_Returns
             // 
             this.lsvReturnItems_Returns.HideSelection = false;
-            this.lsvReturnItems_Returns.Location = new System.Drawing.Point(31, 69);
+            this.lsvReturnItems_Returns.Location = new System.Drawing.Point(5, 69);
             this.lsvReturnItems_Returns.Name = "lsvReturnItems_Returns";
             this.lsvReturnItems_Returns.Size = new System.Drawing.Size(328, 382);
             this.lsvReturnItems_Returns.TabIndex = 24;
@@ -1092,8 +1228,8 @@
             this.button19.ForeColor = System.Drawing.Color.Black;
             this.button19.Image = global::ISTN3AS.Properties.Resources.process;
             this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(110, 456);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
+            this.button19.Location = new System.Drawing.Point(82, 456);
+            this.button19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(174, 60);
             this.button19.TabIndex = 12;
@@ -1105,7 +1241,7 @@
             // 
             this.label51.BackColor = System.Drawing.Color.White;
             this.label51.Font = new System.Drawing.Font("Gadugi", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(82, 24);
+            this.label51.Location = new System.Drawing.Point(44, 24);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(240, 36);
@@ -1132,10 +1268,10 @@
             this.groupBox9.Controls.Add(this.label42);
             this.groupBox9.Controls.Add(this.label41);
             this.groupBox9.Location = new System.Drawing.Point(2, 2);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(857, 524);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox9.Size = new System.Drawing.Size(849, 524);
             this.groupBox9.TabIndex = 0;
             this.groupBox9.TabStop = false;
             // 
@@ -1191,7 +1327,7 @@
             this.orderTblDataGridView.Name = "orderTblDataGridView";
             this.orderTblDataGridView.ReadOnly = true;
             this.orderTblDataGridView.RowHeadersWidth = 51;
-            this.orderTblDataGridView.Size = new System.Drawing.Size(847, 142);
+            this.orderTblDataGridView.Size = new System.Drawing.Size(839, 142);
             this.orderTblDataGridView.TabIndex = 5;
             this.orderTblDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderTblDataGridView_CellClick);
             // 
@@ -1207,7 +1343,7 @@
             this.button18.Image = global::ISTN3AS.Properties.Resources.order__2_;
             this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button18.Location = new System.Drawing.Point(613, 256);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
+            this.button18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(186, 63);
             this.button18.TabIndex = 12;
@@ -1248,8 +1384,8 @@
             this.tabPage1.Controls.Add(this.brandTblDataGridView);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1260, 556);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1051, 552);
             this.tabPage1.TabIndex = 10;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1263,6 +1399,7 @@
             this.getAccountIDDataGridView.DataSource = this.getAccountIDBindingSource;
             this.getAccountIDDataGridView.Location = new System.Drawing.Point(65, 228);
             this.getAccountIDDataGridView.Name = "getAccountIDDataGridView";
+            this.getAccountIDDataGridView.RowHeadersWidth = 51;
             this.getAccountIDDataGridView.Size = new System.Drawing.Size(147, 172);
             this.getAccountIDDataGridView.TabIndex = 6;
             // 
@@ -1270,18 +1407,15 @@
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "MemID";
             this.dataGridViewTextBoxColumn9.HeaderText = "MemID";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 125;
             // 
             // getAccountIDBindingSource
             // 
             this.getAccountIDBindingSource.DataMember = "getAccountID";
             this.getAccountIDBindingSource.DataSource = this.group6DataSet;
-            // 
-            // group6DataSet
-            // 
-            this.group6DataSet.DataSetName = "group6DataSet";
-            this.group6DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sizesDataGridView
             // 
@@ -1475,9 +1609,9 @@
             this.pnlCompany.Controls.Add(this.btnExit);
             this.pnlCompany.Controls.Add(this.lblCompany);
             this.pnlCompany.Location = new System.Drawing.Point(245, 0);
-            this.pnlCompany.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlCompany.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlCompany.Name = "pnlCompany";
-            this.pnlCompany.Size = new System.Drawing.Size(1265, 94);
+            this.pnlCompany.Size = new System.Drawing.Size(1319, 94);
             this.pnlCompany.TabIndex = 3;
             // 
             // button1
@@ -1487,8 +1621,8 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Castellar", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(972, 28);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(1027, 28);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 38);
             this.button1.TabIndex = 2;
@@ -1502,8 +1636,8 @@
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.Font = new System.Drawing.Font("Castellar", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Snow;
-            this.btnExit.Location = new System.Drawing.Point(1021, 28);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(1076, 28);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(44, 38);
             this.btnExit.TabIndex = 1;
@@ -1517,7 +1651,7 @@
             this.lblCompany.Font = new System.Drawing.Font("Castellar", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompany.ForeColor = System.Drawing.SystemColors.Window;
             this.lblCompany.Image = global::ISTN3AS.Properties.Resources.Frost;
-            this.lblCompany.Location = new System.Drawing.Point(391, 2);
+            this.lblCompany.Location = new System.Drawing.Point(446, 2);
             this.lblCompany.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompany.Name = "lblCompany";
             this.lblCompany.Size = new System.Drawing.Size(394, 77);
@@ -1545,7 +1679,7 @@
             this.pnlOptions.Controls.Add(this.btnCashOut);
             this.pnlOptions.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlOptions.Location = new System.Drawing.Point(0, 0);
-            this.pnlOptions.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlOptions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlOptions.Name = "pnlOptions";
             this.pnlOptions.Size = new System.Drawing.Size(244, 701);
             this.pnlOptions.TabIndex = 0;
@@ -1569,7 +1703,7 @@
             this.pbxusr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbxusr.Image = global::ISTN3AS.Properties.Resources.user__1_;
             this.pbxusr.Location = new System.Drawing.Point(22, 10);
-            this.pbxusr.Margin = new System.Windows.Forms.Padding(2);
+            this.pbxusr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxusr.Name = "pbxusr";
             this.pbxusr.Size = new System.Drawing.Size(50, 52);
             this.pbxusr.TabIndex = 1;
@@ -1583,7 +1717,7 @@
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Image = global::ISTN3AS.Properties.Resources.Frost;
             this.button30.Location = new System.Drawing.Point(2, 0);
-            this.button30.Margin = new System.Windows.Forms.Padding(2);
+            this.button30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(241, 81);
             this.button30.TabIndex = 14;
@@ -1594,8 +1728,8 @@
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.BackgroundImage = global::ISTN3AS.Properties.Resources.bag;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(22, 323);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Location = new System.Drawing.Point(21, 323);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(35, 34);
             this.pictureBox10.TabIndex = 13;
@@ -1603,6 +1737,7 @@
             // 
             // btnReturns
             // 
+            this.btnReturns.BackColor = System.Drawing.Color.Transparent;
             this.btnReturns.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReturns.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(59)))), ((int)(((byte)(149)))));
             this.btnReturns.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1610,13 +1745,13 @@
             this.btnReturns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturns.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturns.ForeColor = System.Drawing.Color.Snow;
-            this.btnReturns.Location = new System.Drawing.Point(0, 311);
-            this.btnReturns.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturns.Location = new System.Drawing.Point(-1, 311);
+            this.btnReturns.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReturns.Name = "btnReturns";
             this.btnReturns.Size = new System.Drawing.Size(244, 58);
             this.btnReturns.TabIndex = 12;
             this.btnReturns.Text = "Return";
-            this.btnReturns.UseVisualStyleBackColor = true;
+            this.btnReturns.UseVisualStyleBackColor = false;
             this.btnReturns.Click += new System.EventHandler(this.btnReturns_Click);
             // 
             // pictureBox8
@@ -1624,8 +1759,8 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.BackgroundImage = global::ISTN3AS.Properties.Resources.frmexit;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(22, 409);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Location = new System.Drawing.Point(21, 409);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(35, 34);
             this.pictureBox8.TabIndex = 11;
@@ -1633,6 +1768,7 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(59)))), ((int)(((byte)(149)))));
             this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1640,13 +1776,13 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.Snow;
-            this.btnLogOut.Location = new System.Drawing.Point(-2, 403);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogOut.Location = new System.Drawing.Point(-3, 403);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(244, 58);
             this.btnLogOut.TabIndex = 10;
             this.btnLogOut.Text = "Log-Out";
-            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // pictureBox7
@@ -1654,8 +1790,8 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::ISTN3AS.Properties.Resources.cash_on_delivery;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(22, 250);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Location = new System.Drawing.Point(21, 250);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(35, 34);
             this.pictureBox7.TabIndex = 9;
@@ -1666,8 +1802,8 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::ISTN3AS.Properties.Resources.user__5_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(22, 180);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Location = new System.Drawing.Point(21, 180);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(35, 34);
             this.pictureBox6.TabIndex = 8;
@@ -1675,6 +1811,7 @@
             // 
             // btnAdd2
             // 
+            this.btnAdd2.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(59)))), ((int)(((byte)(149)))));
             this.btnAdd2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1682,17 +1819,18 @@
             this.btnAdd2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd2.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd2.ForeColor = System.Drawing.Color.Snow;
-            this.btnAdd2.Location = new System.Drawing.Point(0, 240);
-            this.btnAdd2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd2.Location = new System.Drawing.Point(-1, 240);
+            this.btnAdd2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd2.Name = "btnAdd2";
             this.btnAdd2.Size = new System.Drawing.Size(244, 58);
             this.btnAdd2.TabIndex = 5;
             this.btnAdd2.Text = "Phone Orders";
-            this.btnAdd2.UseVisualStyleBackColor = true;
+            this.btnAdd2.UseVisualStyleBackColor = false;
             this.btnAdd2.Click += new System.EventHandler(this.btnAdd2_Click);
             // 
             // btnAddUser
             // 
+            this.btnAddUser.BackColor = System.Drawing.Color.Transparent;
             this.btnAddUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(59)))), ((int)(((byte)(149)))));
             this.btnAddUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1700,13 +1838,13 @@
             this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddUser.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUser.ForeColor = System.Drawing.Color.Snow;
-            this.btnAddUser.Location = new System.Drawing.Point(0, 167);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddUser.Location = new System.Drawing.Point(-1, 167);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(244, 58);
             this.btnAddUser.TabIndex = 4;
             this.btnAddUser.Text = "Create Acc.";
-            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // pictureBox2
@@ -1715,7 +1853,7 @@
             this.pictureBox2.BackgroundImage = global::ISTN3AS.Properties.Resources.sales__1_;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(22, 108);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 34);
             this.pictureBox2.TabIndex = 3;
@@ -1723,6 +1861,7 @@
             // 
             // btnCashOut
             // 
+            this.btnCashOut.BackColor = System.Drawing.Color.Transparent;
             this.btnCashOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCashOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(59)))), ((int)(((byte)(149)))));
             this.btnCashOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1731,12 +1870,12 @@
             this.btnCashOut.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCashOut.ForeColor = System.Drawing.Color.Snow;
             this.btnCashOut.Location = new System.Drawing.Point(0, 95);
-            this.btnCashOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCashOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCashOut.Name = "btnCashOut";
             this.btnCashOut.Size = new System.Drawing.Size(244, 58);
             this.btnCashOut.TabIndex = 2;
-            this.btnCashOut.Text = "Begin Purchase";
-            this.btnCashOut.UseVisualStyleBackColor = true;
+            this.btnCashOut.Text = "Main Menu";
+            this.btnCashOut.UseVisualStyleBackColor = false;
             this.btnCashOut.Click += new System.EventHandler(this.btnCashOut_Click);
             // 
             // panel1
@@ -1745,15 +1884,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImage = global::ISTN3AS.Properties.Resources.Frost;
+            this.panel1.Controls.Add(this.btnCat1);
             this.panel1.Controls.Add(this.btnCat5);
             this.panel1.Controls.Add(this.btnCat4);
             this.panel1.Controls.Add(this.btnCat3);
             this.panel1.Controls.Add(this.btnCat2);
-            this.panel1.Controls.Add(this.btnCat1);
             this.panel1.Location = new System.Drawing.Point(245, 86);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1265, 56);
+            this.panel1.Size = new System.Drawing.Size(1320, 56);
             this.panel1.TabIndex = 4;
             // 
             // btnCat5
@@ -1768,7 +1907,7 @@
             this.btnCat5.Image = global::ISTN3AS.Properties.Resources.dumbell;
             this.btnCat5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCat5.Location = new System.Drawing.Point(897, 12);
-            this.btnCat5.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCat5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCat5.Name = "btnCat5";
             this.btnCat5.Size = new System.Drawing.Size(116, 37);
             this.btnCat5.TabIndex = 4;
@@ -1789,7 +1928,7 @@
             this.btnCat4.Image = global::ISTN3AS.Properties.Resources.sports_and_competition;
             this.btnCat4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCat4.Location = new System.Drawing.Point(687, 12);
-            this.btnCat4.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCat4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCat4.Name = "btnCat4";
             this.btnCat4.Size = new System.Drawing.Size(116, 37);
             this.btnCat4.TabIndex = 3;
@@ -1810,7 +1949,7 @@
             this.btnCat3.Image = global::ISTN3AS.Properties.Resources.cap;
             this.btnCat3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCat3.Location = new System.Drawing.Point(464, 12);
-            this.btnCat3.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCat3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCat3.Name = "btnCat3";
             this.btnCat3.Size = new System.Drawing.Size(116, 37);
             this.btnCat3.TabIndex = 2;
@@ -1830,7 +1969,7 @@
             this.btnCat2.Image = global::ISTN3AS.Properties.Resources.sneaker;
             this.btnCat2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCat2.Location = new System.Drawing.Point(249, 12);
-            this.btnCat2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCat2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCat2.Name = "btnCat2";
             this.btnCat2.Size = new System.Drawing.Size(116, 37);
             this.btnCat2.TabIndex = 1;
@@ -1851,7 +1990,7 @@
             this.btnCat1.Image = global::ISTN3AS.Properties.Resources.polo_shirt__2_;
             this.btnCat1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCat1.Location = new System.Drawing.Point(26, 12);
-            this.btnCat1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCat1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCat1.Name = "btnCat1";
             this.btnCat1.Size = new System.Drawing.Size(116, 37);
             this.btnCat1.TabIndex = 0;
@@ -1863,15 +2002,15 @@
             // 
             this.gbItemsScroll.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbItemsScroll.Controls.Add(this.lsvProductCart_Control);
             this.gbItemsScroll.Controls.Add(this.lblTotal);
             this.gbItemsScroll.Controls.Add(this.button2);
             this.gbItemsScroll.Controls.Add(this.button5);
-            this.gbItemsScroll.Location = new System.Drawing.Point(1156, 141);
-            this.gbItemsScroll.Margin = new System.Windows.Forms.Padding(2);
+            this.gbItemsScroll.Controls.Add(this.lsvProductCart_Control);
+            this.gbItemsScroll.Location = new System.Drawing.Point(1114, 150);
+            this.gbItemsScroll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbItemsScroll.Name = "gbItemsScroll";
-            this.gbItemsScroll.Padding = new System.Windows.Forms.Padding(2);
-            this.gbItemsScroll.Size = new System.Drawing.Size(339, 533);
+            this.gbItemsScroll.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbItemsScroll.Size = new System.Drawing.Size(339, 531);
             this.gbItemsScroll.TabIndex = 20;
             this.gbItemsScroll.TabStop = false;
             // 
@@ -1895,7 +2034,7 @@
             this.button2.Image = global::ISTN3AS.Properties.Resources.quit;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(5, 475);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(144, 41);
             this.button2.TabIndex = 21;
@@ -1912,7 +2051,7 @@
             this.button5.Image = global::ISTN3AS.Properties.Resources.process;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(156, 475);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 41);
             this.button5.TabIndex = 22;
@@ -1924,15 +2063,15 @@
             // 
             this.grpBoxDBgrid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grpBoxDBgrid.Controls.Add(this.Quantity_Control);
-            this.grpBoxDBgrid.Controls.Add(this.categoryFIlterDataGridView);
             this.grpBoxDBgrid.Controls.Add(this.btnShoePurchase);
+            this.grpBoxDBgrid.Controls.Add(this.categoryFIlterDataGridView);
             this.grpBoxDBgrid.Controls.Add(this.lblProductID_Purchase);
             this.grpBoxDBgrid.Controls.Add(this.lblProductDiscount);
-            this.grpBoxDBgrid.Location = new System.Drawing.Point(468, 141);
-            this.grpBoxDBgrid.Margin = new System.Windows.Forms.Padding(2);
+            this.grpBoxDBgrid.Location = new System.Drawing.Point(447, 150);
+            this.grpBoxDBgrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpBoxDBgrid.Name = "grpBoxDBgrid";
-            this.grpBoxDBgrid.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxDBgrid.Size = new System.Drawing.Size(688, 533);
+            this.grpBoxDBgrid.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpBoxDBgrid.Size = new System.Drawing.Size(668, 533);
             this.grpBoxDBgrid.TabIndex = 22;
             this.grpBoxDBgrid.TabStop = false;
             // 
@@ -1949,8 +2088,9 @@
             this.categoryFIlterDataGridView.DataSource = this.categoryFIlterBS;
             this.categoryFIlterDataGridView.Location = new System.Drawing.Point(5, 13);
             this.categoryFIlterDataGridView.Name = "categoryFIlterDataGridView";
+            this.categoryFIlterDataGridView.ReadOnly = true;
             this.categoryFIlterDataGridView.RowHeadersWidth = 51;
-            this.categoryFIlterDataGridView.Size = new System.Drawing.Size(678, 442);
+            this.categoryFIlterDataGridView.Size = new System.Drawing.Size(663, 442);
             this.categoryFIlterDataGridView.TabIndex = 12;
             // 
             // lblProductID_Purchase
@@ -2008,11 +2148,6 @@
             // 
             this.sizesTableAdapter.ClearBeforeFill = true;
             // 
-            // memberTblBindingSource1
-            // 
-            this.memberTblBindingSource1.DataMember = "MemberTbl";
-            this.memberTblBindingSource1.DataSource = this.group6DataSet;
-            // 
             // tableAdapterManager3
             // 
             this.tableAdapterManager3.BackupDataSetBeforeUpdate = false;
@@ -2039,129 +2174,12 @@
             // 
             this.getAccountIDTableAdapter.ClearBeforeFill = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(188, 15);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(14, 21);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(188, 74);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(14, 21);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "X";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(188, 131);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(14, 21);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "X";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(183, 310);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(14, 21);
-            this.button7.TabIndex = 16;
-            this.button7.Text = "X";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // memberTblDataGridView
-            // 
-            this.memberTblDataGridView.AutoGenerateColumns = false;
-            this.memberTblDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.memberTblDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn47});
-            this.memberTblDataGridView.DataSource = this.memberTblBindingSource1;
-            this.memberTblDataGridView.Location = new System.Drawing.Point(512, 48);
-            this.memberTblDataGridView.Name = "memberTblDataGridView";
-            this.memberTblDataGridView.ReadOnly = true;
-            this.memberTblDataGridView.Size = new System.Drawing.Size(725, 468);
-            this.memberTblDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "MemID";
-            this.dataGridViewTextBoxColumn10.HeaderText = "MemID";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Surname";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "CellNum";
-            this.dataGridViewTextBoxColumn13.HeaderText = "CellNum";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn16.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn47
-            // 
-            this.dataGridViewTextBoxColumn47.DataPropertyName = "AccNumber";
-            this.dataGridViewTextBoxColumn47.HeaderText = "AccNumber";
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
-            this.dataGridViewTextBoxColumn47.ReadOnly = true;
-            // 
             // dataGridViewTextBoxColumn23
             // 
             this.dataGridViewTextBoxColumn23.DataPropertyName = "PhoneOrderNum";
             this.dataGridViewTextBoxColumn23.HeaderText = "PhoneOrderNum";
             this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
             this.dataGridViewTextBoxColumn23.Width = 125;
             // 
             // dataGridViewTextBoxColumn24
@@ -2170,7 +2188,6 @@
             this.dataGridViewTextBoxColumn24.HeaderText = "ProdID";
             this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
             this.dataGridViewTextBoxColumn24.Width = 125;
             // 
             // dataGridViewTextBoxColumn25
@@ -2179,7 +2196,6 @@
             this.dataGridViewTextBoxColumn25.HeaderText = "UnitPrice";
             this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
             this.dataGridViewTextBoxColumn25.Width = 125;
             // 
             // dataGridViewTextBoxColumn26
@@ -2188,7 +2204,6 @@
             this.dataGridViewTextBoxColumn26.HeaderText = "Quantity";
             this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
             this.dataGridViewTextBoxColumn26.Width = 125;
             // 
             // getPhoneOrderProductsBindingSource
@@ -2216,7 +2231,6 @@
             this.dataGridViewTextBoxColumn18.HeaderText = "Total";
             this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
             this.dataGridViewTextBoxColumn18.Width = 125;
             // 
             // dataGridViewTextBoxColumn19
@@ -2225,7 +2239,6 @@
             this.dataGridViewTextBoxColumn19.HeaderText = "FullName";
             this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
             this.dataGridViewTextBoxColumn19.Width = 125;
             // 
             // dataGridViewTextBoxColumn20
@@ -2234,7 +2247,6 @@
             this.dataGridViewTextBoxColumn20.HeaderText = "CellNum";
             this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
             this.dataGridViewTextBoxColumn20.Width = 125;
             // 
             // dataGridViewTextBoxColumn21
@@ -2243,7 +2255,6 @@
             this.dataGridViewTextBoxColumn21.HeaderText = "StaffID";
             this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
             this.dataGridViewTextBoxColumn21.Width = 125;
             // 
             // dataGridViewTextBoxColumn22
@@ -2252,7 +2263,6 @@
             this.dataGridViewTextBoxColumn22.HeaderText = "MemID";
             this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
             this.dataGridViewTextBoxColumn22.Width = 125;
             // 
             // phoneOrderBindingSource
@@ -2266,7 +2276,6 @@
             this.dataGridViewTextBoxColumn34.HeaderText = "OrderNum";
             this.dataGridViewTextBoxColumn34.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
             this.dataGridViewTextBoxColumn34.Width = 125;
             // 
             // dataGridViewTextBoxColumn35
@@ -2275,7 +2284,6 @@
             this.dataGridViewTextBoxColumn35.HeaderText = "ProdID";
             this.dataGridViewTextBoxColumn35.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.ReadOnly = true;
             this.dataGridViewTextBoxColumn35.Width = 125;
             // 
             // dataGridViewTextBoxColumn36
@@ -2284,7 +2292,6 @@
             this.dataGridViewTextBoxColumn36.HeaderText = "UnitPrice";
             this.dataGridViewTextBoxColumn36.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
             this.dataGridViewTextBoxColumn36.Width = 125;
             // 
             // dataGridViewTextBoxColumn37
@@ -2293,7 +2300,6 @@
             this.dataGridViewTextBoxColumn37.HeaderText = "Quantity";
             this.dataGridViewTextBoxColumn37.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
             this.dataGridViewTextBoxColumn37.Width = 125;
             // 
             // orderLineTblBindingSource
@@ -2316,7 +2322,6 @@
             this.dataGridViewTextBoxColumn28.HeaderText = "OrderTotal";
             this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
             this.dataGridViewTextBoxColumn28.Width = 125;
             // 
             // dataGridViewTextBoxColumn29
@@ -2325,7 +2330,6 @@
             this.dataGridViewTextBoxColumn29.HeaderText = "OrderType";
             this.dataGridViewTextBoxColumn29.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
             this.dataGridViewTextBoxColumn29.Width = 125;
             // 
             // dataGridViewTextBoxColumn30
@@ -2334,7 +2338,6 @@
             this.dataGridViewTextBoxColumn30.HeaderText = "FullName";
             this.dataGridViewTextBoxColumn30.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
             this.dataGridViewTextBoxColumn30.Width = 125;
             // 
             // dataGridViewTextBoxColumn31
@@ -2343,7 +2346,6 @@
             this.dataGridViewTextBoxColumn31.HeaderText = "CellNum";
             this.dataGridViewTextBoxColumn31.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
             this.dataGridViewTextBoxColumn31.Width = 125;
             // 
             // dataGridViewTextBoxColumn32
@@ -2352,7 +2354,6 @@
             this.dataGridViewTextBoxColumn32.HeaderText = "StaffID";
             this.dataGridViewTextBoxColumn32.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
             this.dataGridViewTextBoxColumn32.Width = 125;
             // 
             // dataGridViewTextBoxColumn33
@@ -2361,7 +2362,6 @@
             this.dataGridViewTextBoxColumn33.HeaderText = "MemID";
             this.dataGridViewTextBoxColumn33.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
             this.dataGridViewTextBoxColumn33.Width = 125;
             // 
             // orderTblBindingSource
@@ -2487,15 +2487,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1511, 701);
+            this.ClientSize = new System.Drawing.Size(1455, 701);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabcontrol1);
             this.Controls.Add(this.pnlCompany);
             this.Controls.Add(this.pnlOptions);
-            this.Controls.Add(this.tabcontrol1);
             this.Controls.Add(this.gbItemsScroll);
             this.Controls.Add(this.grpBoxDBgrid);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "salesControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "salesControl";
@@ -2516,6 +2516,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Quantity_Control)).EndInit();
             this.tabcontrol1.ResumeLayout(false);
             this.accCreate.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.memberTblDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memberTblBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.panel25.ResumeLayout(false);
@@ -2536,7 +2539,6 @@
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.getAccountIDDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getAccountIDBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.group6DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coloursDataGridView)).EndInit();
@@ -2560,9 +2562,7 @@
             this.grpBoxDBgrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.categoryFIlterDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberTblBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getLoginDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memberTblDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getPhoneOrderProductsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneOrderBindingSource)).EndInit();
